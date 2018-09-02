@@ -36,7 +36,7 @@ $(function() {
              expect(feeds.url).toBeDefined();
              expect(feeds.url.length).not.toBe(0);
              }
-    })
+    });
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
@@ -47,7 +47,7 @@ $(function() {
            expect(feeds.name).toBeDefined();
            expect(feeds.name.length).not.toBe(0);
          }
-           })
+       });
     });
 
 
@@ -78,11 +78,10 @@ $(function() {
             expect($('body').hasClass('menu-hidden')).toBe(false);
             $('.menu-icon-link').trigger('click');
             expect($('body').hasClass('menu-hidden')).toBe(true);
-          })
+          });
   });
     /* TODO: Write a new test suite named "Initial Entries" */
     describe('Initial Entries', function() {
-
 
         /* TODO: Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
@@ -90,7 +89,16 @@ $(function() {
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
+         beforeEach(function(done) {
+           loadfeed(0, function() {
+             done();
+           });
+         });
 
+         it('have more then 0 entries', function() {
+           expect($('.entry .feed').toBeDefined();
+         });
+       });
 
     /* TODO: Write a new test suite named "New Feed Selection" */
 
