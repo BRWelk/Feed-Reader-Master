@@ -16,7 +16,7 @@ You may run this app by cloning or downloading this git repository to your local
 
 ## RSS feeds
 We are looking for the allFeeds variable to be defined and that the length of allFeeds would not be 0. If allFeeds is greater then 0, we know the array is not empty. We also test to make sure the objects of the allFeeds array have a URL and a name, in the same manner.
-Example:  it('Name is defined and not empty', function() { for (feeds of allFeeds) {expect(feeds.name).toBeDefined(); expect(feeds.name.length).not.toBe(0);
+* Example:  it('Name is defined and not empty', function() { for (feeds of allFeeds) {expect(feeds.name).toBeDefined(); expect(feeds.name.length).not.toBe(0);
          }  });  });
 
 ## The Menu
