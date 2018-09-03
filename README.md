@@ -27,3 +27,27 @@ it('Name is defined and not empty', function() {
 
 ## The Menu
 We are looking for the toggle event when clicking on the hamburger menu in the upper left corner of the web page. By default, the menu is hidden until clicked. Once clicked, the menu will drop down, showing content for the web page.
+* Example:
+it('menu changes when clicked, from invisible to visible', function() {
+  $('.menu-icon-link').trigger('click');
+  expect($('body').hasClass('menu-hidden')).toBe(false);
+  $('.menu-icon-link').trigger('click');
+  expect($('body').hasClass('menu-hidden')).toBe(true);
+});
+});
+
+## Initial entries
+We are looking for the LoadFeed function to be called and completed. We will have to traverse the DOM to find the .entry element and .feed container. LoadFeed is asynchronous (two or more objects or events not existing or happening at the same time). We will use a beforeEach to make sure the process has completed before we trigger the test.
+* Example
+beforeEach(function(done) {
+  loadFeed(0, function () {
+    oldFeed = $('.feed').html();
+    loadFeed(1, done);
+  });
+});
+We will then look for a new feed to be loaded and not to be the same as the old feed.
+* Example
+it('is a new feed', function () {
+  expect($('.feed').html()).not.toBe(oldFeed);
+});
+});
