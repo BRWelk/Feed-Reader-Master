@@ -51,7 +51,7 @@ it('has existing entries', function() {
 });
 
 ## New Feed Selection
-We are looking for a new feed to be loaded by the LoadFeed function an the content changes. It requires a beforeEach, just like the * [Initial Entries](#initial-entries) example.
+We are looking for a new feed to be loaded by the LoadFeed function an the content changes. It requires a beforeEach, just like the ***[Initial Entries](#initial-entries)*** example.
 * Example
 beforeEach(function(done) {
   loadFeed(0, function () {
