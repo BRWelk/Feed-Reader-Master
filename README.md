@@ -3,12 +3,12 @@ This project provides the skills and understanding of red/green testing and how 
 
 ## TABLE OF CONTENTS
 * [Running the app locally](#running-the-app-locally)
-* [What Tests Did We Perform?](#what-tests-did-we-perform?)
+* [What Tests Did We Perform](#what-tests-did-we-perform)
 
 ## Running the app locally
 You may run this app by cloning or downloading this git repository to your local machine. Once you have the app on your machine, you will locate the repository folder and find the index.html. Open the index.html in your favorite browser and it will load.
 
-## What Tests Did We Perform?
+## What Tests Did We Perform
 * [RSS Feeds](#rss-feeds)
 * [The Menu](#the-menu)
 * [Initial Entries](#initial-entries)
