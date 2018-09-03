@@ -43,6 +43,7 @@ We are looking for the LoadFeed function to be called and completed. We will hav
 beforeEach(function(done) {
   loadFeed(0, done);
 });
+
 We then test for existing entries in the DOM (.feed .entry) to have length greater then 0.
 * Example
 it('has existing entries', function() {
@@ -59,6 +60,7 @@ beforeEach(function(done) {
     loadFeed(1, done);
   });
 });
+
 We will then look for a new feed to be loaded and not to be the same as the old feed.
 * Example
 it('is a new feed', function () {
