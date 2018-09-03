@@ -40,6 +40,19 @@ it('menu changes when clicked, from invisible to visible', function() {
 We are looking for the LoadFeed function to be called and completed. We will have to traverse the DOM to find the .entry element and .feed container. LoadFeed is asynchronous (two or more objects or events not existing or happening at the same time). We will use a beforeEach to make sure the process has completed before we trigger the test.
 * Example
 beforeEach(function(done) {
+  loadFeed(0, done);
+});
+We then test for existing entries in the DOM (.feed .entry) to have length greater then 0.
+* Example
+it('has existing entries', function() {
+  expect($('.feed .entry').length).toBeGreaterThan(0);
+  });
+});
+
+## New Feed Selection
+We are looking for a new feed to be loaded by the LoadFeed function an the content changes. It requires a beforeEach, just like the * [Initial Entries](initial-entries) example.
+* Example
+beforeEach(function(done) {
   loadFeed(0, function () {
     oldFeed = $('.feed').html();
     loadFeed(1, done);
