@@ -68,4 +68,4 @@ it('is a new feed', function () {
 
 ## contributions
 ***Once again, I would like to thank Zachary Welk (my son) for his guidance, trouble shooting and patience helping me learn.***
-I also would like to commend Udaity for putting together great training modules to teach me and push me to find resources to solve the chellenges in each section.
+I also would like to commend Udacity for putting together great training modules to teach me and push me to find resources to solve the challenges in each section.
