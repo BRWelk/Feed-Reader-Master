@@ -2,17 +2,18 @@
 This project provides the skills and understanding of red/green testing and how Jasmine works with .js and the DOM to verify code is performing to expectations.
 
 ## TABLE OF CONTENTS
-* [Running the app locally](running-the-app-locally)
-* [What Tests Did We Perform?](what-tests-did-we-perform?)
+* [Running the app locally](#running-the-app-locally)
+* [What Tests Did We Perform?](#what-tests-did-we-perform?)
 
 ## Running the app locally
 You may run this app by cloning or downloading this git repository to your local machine. Once you have the app on your machine, you will locate the repository folder and find the index.html. Open the index.html in your favorite browser and it will load.
 
 ## What Tests Did We Perform?
-* [RSS Feeds](rss-feeds)
-* [The Menu](the-menu)
-* [Initial Entries](initial-entries)
-* [New Feed Selection](new-feed-selection)
+* [RSS Feeds](#rss-feeds)
+* [The Menu](#the-menu)
+* [Initial Entries](#initial-entries)
+* [New Feed Selection](#new-feed-selection)
+* [Contributions](#contributions)
 
 ## RSS feeds
 We are looking for the allFeeds variable to be defined and that the length of allFeeds would not be 0. If allFeeds is greater then 0, we know the array is not empty. We also test to make sure the objects of the allFeeds array have a URL and a name, in the same manner.
@@ -50,7 +51,7 @@ it('has existing entries', function() {
 });
 
 ## New Feed Selection
-We are looking for a new feed to be loaded by the LoadFeed function an the content changes. It requires a beforeEach, just like the * [Initial Entries](initial-entries) example.
+We are looking for a new feed to be loaded by the LoadFeed function an the content changes. It requires a beforeEach, just like the * [Initial Entries](#initial-entries) example.
 * Example
 beforeEach(function(done) {
   loadFeed(0, function () {
@@ -64,3 +65,7 @@ it('is a new feed', function () {
   expect($('.feed').html()).not.toBe(oldFeed);
 });
 });
+
+## contributions
+***Once again, I would like to thank Zachary Welk (my son) for his guidance, trouble shooting and patience helping me learn.***
+I also would like to commend Udaity for putting together great training modules to teach me and push me to find resources to solve the chellenges in each section.
